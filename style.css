@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap");
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightsteelblue;
+    background-image: url("bg.jpg");
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 130%;
+}
+
+.container{
+    width:50%;
+    background-color: #fff;
+    align-self: center;
+    display: block;
+    margin: 100px 425px;
+    box-shadow: 5px 10px 20px black;
+}
+
+.header{
+    background-color: teal;
+    padding: 30px 30px;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Kalam",sans-serif;
+}
+
+.header::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input{
+    width: 75%;
+    padding: 10px;
+    float:left;
+    font-size: 16px;
+}
+
+.addBtn{
+    padding: 10px;
+    width: 25%;
+    background: black;
+    color: wheat;
+    float:left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.addBtn:hover{
+    background-color: rgb(39, 39, 46);
+}
+
+ul{
+    margin: 0;
+    border-left: 6px solid teal;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li{
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background-color: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+ul li:nth-child(odd)
+{
+    background: #f9f9f9;
+}
+
+ul li:hover{
+    background: #ddd;
+}
+
+ul li.checked{
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    content: "";
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover{
+    background-color: #f44336;
+    color: white;
+}
